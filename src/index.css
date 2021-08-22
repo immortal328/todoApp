@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      line-height: 1;
+      font-family: 'Roboto',sans-serif;
+      
+      background-color: rgb(235, 233, 233);
+}
+#root{
+      height: 100vh;
+}
+.main{
+      height: 100%;
+}
+.header{
+      height: 58px;
+      
+}
+
+.sidebar div {
+      cursor: pointer;
+}
+.sidebar div.active {
+      background-color: white;
+}
+
+
+.addTaskBtn{
+      cursor: pointer;
+}
+
+.addBtn:disabled{
+      background-color: gray;
+}
+
+
+.calender{
+      position: relative;
+      float: right;
+      margin-top: -32px;
+      height: 29px;
+      border:1px solid rgb(122, 122, 122);
+      padding: 5px;
+
+}
+
+.taskItemsContainer .listItem:not(:last-child){
+      border-bottom: 3px solid rgb(241, 64, 64);
+}
+      
